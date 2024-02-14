@@ -1,0 +1,45 @@
+<!-- Here I am learning about the basic of Class  -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Practice: Making classes and objects</title>
+    <script type="module" src="bagpack.js"></script>
+    <script type="module" src="script.js"></script>
+    <style>
+      .container {
+        display: flex;
+        flex-direction: row;
+        border: solid black 2px;
+        position: absolute;
+        top: 100px;
+        left: 500px;
+        gap: 20px;
+      }
+
+      #instance1,
+      #instance2 {
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+        text-align: center; /* Add this line */
+      }
+
+      .label {
+        font-weight: bold;
+      }
+
+      hr {
+        height: 200px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div id="instance1"></div>
+      <hr />
+      <div id="instance2"></div>
+    </div>
+  </body>
+</html>
