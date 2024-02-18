@@ -1,0 +1,47 @@
+<!-- Generate random number -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Random number</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!--
+    <h2>Generate random number</h2>
+    <label for="number">Click here to generate random number</label>
+    <button onclick="genNum()" id="gen">Click here</button>
+    <br />
+    <span>The Random numbers are:</span>
+    <button><div id="rand"></div></button>
+
+    <script>
+      function generateRandomNumber(min, max) {
+        return Math.floor(Math.random() * (max - min + 1)) + min;
+      }
+
+      function genNum() {
+        document.getElementById("rand").innerHTML = generateRandomNumber(
+          1,
+          100
+        );
+      }
+    </script> -->
+
+    <h2>Generate random number</h2>
+
+    <label for="min">Enter the min number:</label>
+    <input type="number" name="min" id="min" />
+    <br /><br />
+    <hr />
+    <label for="max">Enter the max number:</label>
+    <input type="number" name="maxs" id="max" /><br /><br />
+
+    <button onclick="genNum()" id="gen">Generate Random Number</button>
+    <button onclick="regenNum()" id="regen">Regenerate Random Number</button>
+    <div id="rand"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
