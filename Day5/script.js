@@ -16,3 +16,8 @@ function checkNumber() {
     }
   }
 }
+
+function recheckNumber() {
+  document.getElementById("numberInput").value = "";
+  document.getElementById("result").innerHTML = "";
+}
