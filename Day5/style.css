@@ -6,7 +6,8 @@ label {
 #numberInput {
   border: solid black;
 }
-#button-35 {
+#button1,
+#button2 {
   background-color: #fff;
   border-radius: 12px;
   box-shadow: transparent 0 0 0 3px, rgba(18, 18, 18, 0.1) 0 6px 20px;
@@ -30,6 +31,12 @@ label {
   touch-action: manipulation;
 }
 
-#button-35:hover {
+#button1:hover {
   box-shadow: #121212 0 0 0 3px, transparent 0 0 0 0;
+}
+#button2 {
+  color: red;
+}
+#button2:hover {
+  box-shadow: #6f1a1a 0 0 0 3px, transparent 0 0 0 0;
 }
