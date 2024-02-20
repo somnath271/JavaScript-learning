@@ -4,11 +4,18 @@ function showContent(contentId) {
     content.style.display = "none";
   });
 
+  // Hide the homecontent
+  var homeContent = document.getElementById("homecontent");
+  if (homeContent) {
+    homeContent.style.display = "none";
+  }
+
   var contentToShow = document.getElementById(contentId);
   if (contentToShow) {
     contentToShow.style.display = "block";
   }
 }
+
 // odd or even
 function isEven(number) {
   return number % 2 === 0;
@@ -67,7 +74,6 @@ function genNum() {
   var max = parseInt(document.getElementById("max").value);
 
   if (isNaN(min) || isNaN(max)) {
-    //   alert("Please enter a valid number");
     document.getElementById("rand").innerHTML = "Please enter a valid number";
     return;
   }
