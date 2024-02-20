@@ -1,0 +1,76 @@
+<!-- To check number is odd or even, calculate factorial
+and generate random number-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Button Content Display</title>
+    <style>
+      .content {
+        display: none;
+      }
+    </style>
+    <link rel="stylesheet" href="style1.css" />
+    <link rel="stylesheet" href="style2.css" />
+  </head>
+  <body>
+    <button id="button1" onclick="showContent('content1')">
+      Check Odd or Even
+    </button>
+    <button id="button2" onclick="showContent('content2')">
+      Calculate Factorial
+    </button>
+    <button id="button3" onclick="showContent('content3')">
+      Generate Random numbers
+    </button>
+    <button id="button4" onclick="showContent('content4')">Go to home</button>
+    <div id="content4" class="content"></div>
+
+    <!-- odd or even -->
+    <div id="content1" class="content">
+      <h2>To check any number is odd or even</h2>
+      <hr />
+      <label for="numberInput">Enter a number:</label>
+      <input type="number" id="numberInput" />
+      <button onclick="checkNumber()" id="oddevenbutton1" role="button">
+        Check
+      </button>
+      <button onclick="recheckNumber()" id="oddevenbutton2" role="button">
+        reCheck
+      </button>
+      <p id="result"></p>
+    </div>
+
+    <!--Factorial  -->
+    <div id="content2" class="content">
+      <h2>To calculate the factorial of any number:</h2>
+      <hr />
+      <br />
+      <label for="num">Enter the number</label>
+      <input type="number" name="numm" id="num" />
+      <button onclick="checkFact()" id="factorialButton1">Click here</button>
+      <button onclick="clearResult()" id="factorialButton2">Clear</button>
+      <div id="fact"></div>
+    </div>
+
+    <!-- Generate random number  -->
+    <div id="content3" class="content">
+      <h2>Generate random number</h2>
+      <hr />
+      <label for="min">Enter the min number:</label>
+      <input type="number" name="min" id="min" />
+      <br /><br />
+      <hr />
+      <label for="max">Enter the max number:</label>
+      <input type="number" name="maxs" id="max" /><br /><br />
+
+      <button onclick="genNum()" id="gen">Generate Random Number</button>
+      <button onclick="regenNum()" id="regen">Regenerate Random Number</button>
+      <div id="rand"></div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
