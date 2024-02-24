@@ -1,0 +1,52 @@
+<!-- Understanding about the DOM in JavaScript -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Web Page</title>
+  </head>
+  <body>
+    <div id="container">
+      <h1>Hello, World!</h1>
+      <p>This is my first web page.</p>
+      <button>hello</button>
+      <button id="button">suman</button>
+      <p id="para">this is the paragraph</p>
+    </div>
+    <script>
+      let container = document.getElementById("container");
+      let heading = document.querySelector("h1");
+      //   let button1 = document.querySelectorAll("button");
+      let button2 = document.querySelector("#button");
+
+      //   button1.forEach((button) => {
+      //     button.addEventListener("click", function () {
+      //       heading.style.color = "red";
+      //     });
+      //   });
+
+      button2.addEventListener("click", message);
+
+      function message() {
+        let name = prompt("Enter Name of Student");
+        heading.textContent = "Roll No. 1:" + name;
+      }
+
+      let para = document.querySelector("#para");
+      para.textContent = "This is the new paragraph";
+
+      // Adding elements
+      let newParagraph = document.createElement("p");
+      newParagraph.textContent = "i created new paragraph using JavaScript";
+      //   container.appendChild(newParagraph);
+      //   container.removeChild(heading);
+
+      let newpara = document.querySelector("p");
+      button2.addEventListener("click", function () {
+        button2.style.color = "red";
+      });
+
+      container.append(newpara, button2);
+    </script>
+  </body>
+</html>
