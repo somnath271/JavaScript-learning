@@ -1,0 +1,39 @@
+.accordion {
+  background-color: #736d91;
+  color: #5a3232;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  display: none;
+  overflow: hidden;
+}
+.active {
+  background-color: #70a925;
+  color: #9a1919;
+}
+
+.active {
+  flex: 1;
+  /* background-color: #333; */
+  /* color: #fff; */
+  border: 1px solid;
+  padding: 0.5rem;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.5s ease-out;
+}
+
+.active:hover,
+.active:focus {
+  background-color: #fff;
+  color: #333;
+}
