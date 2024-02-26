@@ -23,8 +23,6 @@
 
 .active {
   flex: 1;
-  /* background-color: #333; */
-  /* color: #fff; */
   border: 1px solid;
   padding: 0.5rem;
   text-align: center;
