@@ -1,0 +1,55 @@
+<!-- toggle dark and light mode -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Creating toggle button</title>
+    <style>
+      .light {
+        background-color: white;
+        color: black;
+      }
+      p {
+        font-size: 20px;
+      }
+      .dark {
+        background-color: black;
+        color: red;
+      }
+    </style>
+  </head>
+
+  <body>
+    <button id="toggle">Click here</button>
+    <p>Welcome to my website</p>
+    <script>
+      let button = document.querySelector("#toggle");
+      let currmod = "light";
+      let body = document.querySelector("body");
+
+      //   button.addEventListener("click", function () {
+      //     if (currmod === "light") {
+      //       currmod = "dark";
+      //       body.style.backgroundColor = "black";
+      //     } else {
+      //       currmod = "light";
+      //       body.style.backgroundColor = "white";
+      //     }
+      //   });
+
+      button.addEventListener("click", function () {
+        if (currmod === "light") {
+          currmod = "dark";
+          body.classList.add("dark");
+          body.classList.remove("light");
+        } else {
+          currmod = "light";
+          body.classList.add("light");
+          body.classList.remove("dark");
+        }
+      });
+    </script>
+  </body>
+</html>
