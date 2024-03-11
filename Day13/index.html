@@ -9,11 +9,16 @@
   </head>
   <body>
     <div id="color"></div>
+    <div id="colors"></div>
 
     <script>
       //   let a = document.querySelector(p);
       const car = { model: "toyota", color: "blue" };
-      document.getElementById("color").innerHTML = car.model;
+      document.getElementById("color").innerHTML =
+        "The model of the car is " + car.model + "<br>";
+      document.getElementById("colors").innerHTML =
+        "The color of the car is " + car.color;
+
       let a = document.querySelector("color");
     </script>
   </body>
