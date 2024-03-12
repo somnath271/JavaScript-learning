@@ -12,14 +12,27 @@
     <div id="colors"></div>
 
     <script>
-      //   let a = document.querySelector(p);
-      const car = { model: "toyota", color: "blue" };
+      const car = { model: "Toyota", color: "Blue" };
+
+      // Accessing properties of the car object and updating HTML elements
       document.getElementById("color").innerHTML =
         "The model of the car is " + car.model + "<br>";
       document.getElementById("colors").innerHTML =
         "The color of the car is " + car.color;
 
-      let a = document.querySelector("color");
+      // Changing the color property dynamically
+      car.color = "Red";
+
+      // Updating the HTML element with the new color
+      document.getElementById("colors").innerHTML +=
+        "<br>Now, the color of the car is " + car.color;
+
+      // Adding a new property dynamically
+      car.year = 2022;
+
+      // Updating the HTML element with the new property
+      document.getElementById("colors").innerHTML +=
+        "<br>The car was manufactured in " + car.year;
     </script>
   </body>
 </html>
