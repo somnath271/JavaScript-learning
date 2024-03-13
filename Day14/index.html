@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learning about arrays</title>
+  </head>
+  <body>
+    <div id="output"></div>
+
+    <script>
+      // Creating an array of numbers
+      const numbers = [1, 2, 3, 4, 5];
+
+      // Accessing elements of the array
+      document.getElementById("output").innerHTML +=
+        "<p>Elements of the array: " + numbers.join(", ") + "</p>";
+
+      // Accessing individual elements
+      document.getElementById("output").innerHTML +=
+        "<p>Third element of the array: " + numbers[2] + "</p>";
+
+      // Modifying array elements
+      numbers[1] = 10;
+      document.getElementById("output").innerHTML +=
+        "<p>Modified array: " + numbers.join(", ") + "</p>";
+
+      // Adding elements to the end of the array
+      numbers.push(6);
+      numbers.push(7);
+      document.getElementById("output").innerHTML +=
+        "<p>Array after adding elements: " + numbers.join(", ") + "</p>";
+
+      // Removing elements from the end of the array
+      numbers.pop();
+      document.getElementById("output").innerHTML +=
+        "<p>Array after removing last element: " + numbers.join(", ") + "</p>";
+
+      // Adding elements to the beginning of the array
+      numbers.unshift(0);
+      document.getElementById("output").innerHTML +=
+        "<p>Array after adding element to the beginning: " +
+        numbers.join(", ") +
+        "</p>";
+
+      // Removing elements from the beginning of the array
+      numbers.shift();
+      document.getElementById("output").innerHTML +=
+        "<p>Array after removing first element: " + numbers.join(", ") + "</p>";
+
+      // Finding the index of an element
+      const index = numbers.indexOf(3);
+      document.getElementById("output").innerHTML +=
+        "<p>Index of 3 in the array: " + index + "</p>";
+
+      // Removing elements by index
+      if (index !== -1) {
+        numbers.splice(index, 1);
+        document.getElementById("output").innerHTML +=
+          "<p>Array after removing element at index " +
+          index +
+          ": " +
+          numbers.join(", ") +
+          "</p>";
+      }
+
+      // Length of the array
+      document.getElementById("output").innerHTML +=
+        "<p>Length of the array: " + numbers.length + "</p>";
+    </script>
+  </body>
+</html>
